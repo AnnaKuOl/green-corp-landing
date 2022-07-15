@@ -32,11 +32,12 @@ header{
     cursor: pointer;
     box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
     padding: 15px;
-    transition: background-color 0.3s ease-in;
+    
   }
   button:hover{
     background-color: #f6980c;
     box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+    transition: background-color 0.3s ease-in;
   }
   .about{
     display: flex;
@@ -99,13 +100,14 @@ header{
   .form__group{
     display: flex;
     flex-direction: column;
+    text-align: left;
   }
   .form label{
-    text-align: left;
+    
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 20px;
+    
   }
   .form form{
     display: grid;
@@ -119,6 +121,8 @@ header{
     padding: 0px 20px 0px 20px;
     border-radius:15px;
     border: none;
+    outline: none;
+
   } 
   .form__submit{
     font-size: 18px;
@@ -128,12 +132,11 @@ header{
   select {
     appearance: none;
   }
-  input {
-    outline: none;
-  }
+
   footer{
     padding: 90px 20px 90px 20px;
     font-weight: 600;
+    font-size: 16px;
   }
   .footer__container{
     display: flex;
