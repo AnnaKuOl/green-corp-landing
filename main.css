@@ -172,6 +172,10 @@ button:hover {
 select {
   appearance: none;
 }
+.features {
+  background-color: #fff;
+  padding: 115px 60px;
+}
 
 footer {
   padding: 90px 20px 90px 20px;
@@ -209,7 +213,91 @@ footer {
 .footer__links a {
   margin-bottom: 15px;
 }
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  
+  
+}
+.card {
+  padding: 35px 40px 25px 40px;
+  border: 1px solid #D9E4E6;
+  border-radius: 5px;
+}
+.card p {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+.card__logo{
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #eaeff9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__color {
+  color: #ad1714;
+}
+.fa-solar-panel {
+  color: #ffb406;
+}
+.fa-chart-line {
+  color: #22a030;
+}
+.features__border {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px #E6EAF4 solid;
+}
+.features__feedback {
+  display: flex;
 
+}
+.features__feedback-left{
+  margin-right: 10px;
+}
+.features__feedback-left h2 {
+  font-size: 48px;
+}
+.features__feedback-left p {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+.features__feedback-right {
+  display: flex;
+  /* align-items: stretch; */
+
+}
+ .features__box {
+  padding: 30px 40px 25px 40px;
+  color: #fff;
+  border-radius: 25px;
+} 
+.features__box h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+.features__savings-box {
+  background-color: #dc5e26;
+  box-shadow: rgb(221 95 38 / 20%) 0px 6px 0;
+  margin-right: 30px;
+}
+.features__rate-box {
+  background-color: #1D263A;
+ 
+  box-shadow: rgb(29 38 58 / 20%) 0px 6px 0;
+}
+.features__rate-box i {
+  color: #ff7039;
+}
 @keyframes rotation {
   0% {
     transform: rotate(0);
@@ -220,7 +308,56 @@ footer {
   }
 
 }
+.promo {
+  display: flex;
+  padding: 0px;
+}
+.promo__image {
+  background-image: url(/img/promo.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  flex-shrink: 0
+}
+.promo__right {
+  background-color: #dd5f26;
+  padding: 160px 60px 160px 60px;
+}
+.right_card {
+  background-color: #fff;
+  padding: 30px 40px;
+  font-weight: 500;
+  border-radius: 25px;
+  
+}
+.right_card p {
+  opacity: 0.8;
+}
+.right_card p::before {
+  content: " ";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ec6b29;
+  margin-right: 10px;
 
+}
+.card_button {
+  display: flex;
+  justify-content: center;
+}
+.card_button button {
+  background-color: #107b1c;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-weight: 600;
+}
+.card_button i {
+  font-size: 15px;
+  margin-left: 5px;
+}
 @media (max-width: 720px) {
 
   header, section, footer {
@@ -252,6 +389,47 @@ footer {
   .footer__container{
     flex-direction: column;
   }
+  .features {
+    padding: 50px 10px;
+  }
+  .cards{
+    grid-template-columns: auto;
+  }
+  .features__feedback {
+    flex-direction: column;
+    /* align-items: center; */
+    
+  }
+  .features__feedback-left{
+    margin-right: 0px;
+  }
+  .features__feedback-left h2 {
+    font-size: 36px;
+  }
+  .features__feedback-right {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .features__box h3 {
+    font-size: 36px;
+  }
+  .features__savings-box {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .promo {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+  .promo__image {
+    height: 500px;
+    width: 100%;
+  }
+  .promo__right {
+    padding: 50px 10px 50px 10px;
+  }
+
 }
 @media (min-width: 721px) and (max-width: 1024px){
   header, section, footer {
