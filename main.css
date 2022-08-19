@@ -216,12 +216,13 @@ footer {
 .cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+  grid-gap: 50px;
   
   
 }
 .card {
   padding: 35px 40px 25px 40px;
+  background: #FFFFFF;
   border: 1px solid #D9E4E6;
   border-radius: 5px;
 }
@@ -251,6 +252,7 @@ footer {
   color: #22a030;
 }
 .features__border {
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
   border: 1px #E6EAF4 solid;
@@ -272,7 +274,7 @@ footer {
 }
 .features__feedback-right {
   display: flex;
-  /* align-items: stretch; */
+  /* align-items: center;  */
 
 }
  .features__box {
@@ -291,8 +293,7 @@ footer {
   margin-right: 30px;
 }
 .features__rate-box {
-  background-color: #1D263A;
- 
+  background-color: #1D263A; 
   box-shadow: rgb(29 38 58 / 20%) 0px 6px 0;
 }
 .features__rate-box i {
@@ -321,13 +322,16 @@ footer {
 }
 .promo__right {
   background-color: #dd5f26;
-  padding: 160px 60px 160px 60px;
+  padding: 160px 60px ;
 }
 .right_card {
   background-color: #fff;
   padding: 30px 40px;
   font-weight: 500;
   border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
   
 }
 .right_card p {
@@ -353,6 +357,7 @@ footer {
   margin-top: 20px;
   padding: 15px 30px;
   font-weight: 600;
+  box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
 }
 .card_button i {
   font-size: 15px;
@@ -408,7 +413,7 @@ footer {
   }
   .features__feedback-right {
     flex-direction: column;
-    /* align-items: center; */
+     align-items: initial; 
   }
   .features__box h3 {
     font-size: 36px;
