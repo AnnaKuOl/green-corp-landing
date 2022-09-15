@@ -64,7 +64,12 @@ button:hover {
   
 
 }
-
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+}
 
 .about__image {
   width: 500px;
@@ -221,12 +226,7 @@ footer {
   
 }
 
-.orb-canvas{
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-}
+
 .card {
   padding: 35px 40px 25px 40px;
   background: #FFFFFF;
@@ -321,7 +321,7 @@ footer {
   padding: 0px;
 }
 .promo__image {
-  background-image: url(/img/promo.jpg);
+  background-image: url(img/promo.jpg);
   background-position: center;
   background-size: cover;
   width: 50%;
